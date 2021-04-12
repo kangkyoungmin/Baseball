@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/includeHTML.js"></script>
+
+
+
+
+<title>rank_1</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/tablestyle2.css" type = "text/css">
+<link rel="stylesheet" href="css/tooltipstyle.css" type = "text/css">
+</head>
+<body>
+
+<header include-html="header.html"></header>
+<nav include-html="nav5.html"></nav>
+
+	<h2 style="margin-left:200px;">선수랭킹</h2><br><br>
+<form style="margin-top:10px;margin-left:200px;">
+
+<input id ="batter01" type = "button" value = "타자"/>
+<input id ="pitcher01" type = "button" value = "투수"/>
+<input id ="tablesortip" type = "button" value = "sort1"/>
+<input id ="tablesorth" type = "button" value = "sort2"/>
+
+<legend>타자</legend>
+<span><input id = "bat03" type="radio" value = "3월" name="1"/>
+ <label for="3월">3월</label></span>
+<span><input id = "bat04" type="radio" value = "4월" name="1"/>
+ <label for="4월">4월</label></span>
+<span><input id = "bat05" type="radio" value = "5월" name="1"/>
+ <label for="5월">5월</label></span>
+ <span><input id = "bat06" type="radio" value = "6월" name="1"/>
+ <label for="6월">6월</label></span>
+ <span><input id = "bat07" type="radio" value = "7월" name="1"/>
+ <label for="7월">7월</label></span>
+ <span><input id = "bat08" type="radio" value = "8월" name="1"/>
+ <label for="8월">8월</label></span>
+ <span><input id = "bat09" type="radio" value = "9월" name="1"/>
+ <label for="9월">9월</label></span> 
+ 
+ <legend>투수</legend>
+<span><input id = "pit03" type="radio" value = "3월" name="2"/>
+ <label for="3월">3월</label></span>
+<span><input id = "pit04" type="radio" value = "4월" name="2"/>
+ <label for="4월">4월</label></span>
+<span><input id = "pit05" type="radio" value = "5월" name="2"/>
+ <label for="5월">5월</label></span>
+ <span><input id = "pit06" type="radio" value = "6월" name="2"/>
+ <label for="6월">6월</label></span>
+ <span><input id = "pit07" type="radio" value = "7월" name="2"/>
+ <label for="7월">7월</label></span>
+ <span><input id = "pit08" type="radio" value = "8월" name="2"/>
+ <label for="8월">8월</label></span>
+ <span><input id = "pit09" type="radio" value = "9월" name="2"/>
+ <label for="9월">9월</label></span> 
+ 
+</form>
+
+<div id = "playerresult"></div>
+<br>
+
+<script type="text/javascript" src="js/rank_1.js"></script >
+
+<footer include-html="footer.html"></footer>
+
+</body>
+<script>
+	includeHTML();	
+</script>
+</html>

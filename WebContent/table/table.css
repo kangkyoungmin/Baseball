@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+h3{
+	text-align:center;
+	font-family:fantasy;
+}
+
+
+table{
+	width:50%;
+	text-align:center;
+	margin:0 auto;
+	background: white;
+	border-collapse:collapse
+}
+
+table tr,td,th{
+	border: 1px solid #444444;
+}
+th,td{
+	font-family: sans-serif;
+	font-weight:bold;
+}

@@ -1,0 +1,95 @@
+@charset "UTF-8";
+.tabmenu{
+
+}
+.tabmenu input[type="radio"]{
+	display:none;
+	width:100%;
+	position:relative;
+}
+.tabmenu label{
+	display:inline-block;
+	width:30%;
+	padding:15px 0;
+	text-align:center;
+	background: #D8D8D8;
+	font-size: 20px;
+	cursor:pointer;
+	position:relative;
+}
+.tabmenu > div{
+	display:none;
+	padding:20px;
+	min-height:50px;
+	background:white;
+	font-size:40px;
+	color:black;
+	position:relative;
+}
+
+/*tab1 선택 시 탭 영역 색바꾸기 */
+.tabmenu input[type="radio"]:checked + label{
+	background:#2E2E2E;
+	color:white;
+}
+/*tab1 선택 시 내용 보이기 */
+.tabmenu #tab1:checked ~ #cont1{
+	display:block;
+	visibility:visible;
+}
+
+.tabmenu #tab2:checked ~ #cont2{
+	display:block;
+}
+
+.tabmenu #tab3:checked ~ #cont3{
+	display:block;
+}
+#rank1{
+	width:40%;
+	padding:20px;
+	text-align:center;
+	background-color:#D8D8D8;
+}
+#rank2{
+	width:400px;
+	float:right;
+	padding:20px 0;
+}
+
+#rank_top > thead{
+	font-size:20px;
+	font-weight:bold;
+}
+.rank_no1{
+	color:red;
+	font-size:15px;
+	font-weight:bold;
+}
+
+.record{
+	font-weight:bold;
+	font-size:18px;
+}
+.name{
+	font-size:18px;
+}
+
+table{
+	border:1px;
+	table-layout:fixed;
+	width:100%;
+	text-align:center;
+}
+#hit{
+	width:80%;
+	height:100%;
+	border-radius: 70%;
+	background:#2E2E2E;
+}
+.rank_{
+	font-size:15px;
+	font-weight:bold;
+}
+
+

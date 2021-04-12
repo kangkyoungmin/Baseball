@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+#select{
+	text-align:center;
+}
+
+table.result{
+    margin-left:auto;
+    margin-right:auto;
+    width: 80%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 12px;
+  }
+  table.result tr {
+    border-bottom: 1px solid #c0c0c0;
+    padding: 6px 6px;
+    line-height: 200%;
+  }
+  table.result  th{
+    padding: 6px 6px;
+    background-color: #e0e0e0;
+  }
+
+  
+  table.select{
+    margin-left:auto;
+    margin-right:auto;
+    border-collapse: collapse;
+    width: 80%;
+  }
+ 
+   table.select > tr > td{
+   width: 150px;
+    
+  }

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+[data-tooltip-text]:hover {
+	position: relative; /*가운데 정렬*/
+}
+
+[data-tooltip-text]:after {
+	-webkit-transition: bottom .3s ease-in-out, opacity .3s ease-in-out;  /*ease-in-out: 시작지점과 종료지점의 변화가 천천히 진행됨*/
+	-moz-transition: bottom .3s ease-in-out, opacity .3s ease-in-out;
+	transition: bottom .3s ease-in-out, opacity .3s ease-in-out;
+
+	background-color: rgba(0, 0, 0, 0.8);
+
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);		/*그림자 지정*/
+	-moz-box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+	box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+	
+  -webkit-border-radius: 5px;										/*경계 설정*/
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+  color: #FFFFFF;										/*글씨 설정, width를 auto로 설정하여 글씨 양에 따라 다르게 나타탐*/
+	font-size: 12px;
+	margin-bottom: 10px;								/*word-wrap: 넘어간 단어 줄바꿈*/
+	padding: 7px 12px;
+	position: absolute;									/*z-index: 수직위치 지정*/
+	width: auto;
+	min-width: 50px;
+	max-width: 300px;
+	word-wrap: break-word;
+
+	z-index: 9999;
+	
+	opacity: 0;										/*opacity: 불투명도*/
+	left: -9999px;
+  	top: 90%;
+	
+	content: attr(data-tooltip-text);
+}
+
+
+
+[data-tooltip-text]:hover:after {
+	top: 130%;
+	left: 0;
+	opacity: 1;
+}
